@@ -1,0 +1,135 @@
+<!doctype html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Alen Abraham is a first-year student at Presidency University in Bangalore, learning web development and C programming.">
+  <meta name="theme-color" content="#0a1020">
+  <title>Alen Abraham — Student Developer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="scroll-progress" aria-hidden="true"><span id="scrollProgress"></span></div>
+  <nav class="navbar navbar-expand-lg fixed-top site-nav" aria-label="Main navigation">
+    <div class="mx-auto w-full max-w-7xl px-6 nav-container">
+      <a class="navbar-brand" href="#home" aria-label="Alen Abraham, home">AA<span>.</span></a>
+      <button class="navbar-toggler" type="button" aria-controls="navMenu" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+      <div class="navbar-collapse" id="navMenu">
+        <ul class="navbar-nav ml-auto align-items-center gap-8">
+          <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+          <li class="nav-item"><a class="nav-link" href="#work">Projects</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Contact <span>↘</span></a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="mx-auto w-full max-w-7xl px-6 hero-container">
+        <div class="hero-layout">
+          <div class="hero-main" data-reveal>
+            <div class="hero-intro">
+              <p class="hero-greeting"><span class="greeting-dot">●</span> HELLO, I’M</p>
+              <h1>Alen<br><span>Abraham.</span></h1>
+              <a class="scroll-prompt" href="#about">GET TO KNOW ME <span>↓</span></a>
+            </div>
+            <div class="hero-terminal-wrap" data-reveal>
+              <div class="terminal-orbit orbit-one" aria-hidden="true"></div>
+              <div class="terminal-orbit orbit-two" aria-hidden="true"></div>
+              <div class="hero-terminal" data-tilt aria-label="A decorative terminal window">
+                <div class="terminal-topbar"><span class="terminal-dots"><i></i><i></i><i></i></span><span>~/portfolio</span><span class="terminal-menu">•••</span></div>
+                <div class="terminal-content">
+                  <p class="terminal-command"><span>alen@portfolio</span><b> ~ </b>$ ls</p>
+                  <nav class="terminal-directory-list" aria-label="Explore portfolio sections">
+                    <a href="#about"><span>↳</span> about/</a>
+                    <a href="#skills"><span>↳</span> skills/</a>
+                    <a href="#work"><span>↳</span> projects/</a>
+                    <a href="#contact"><span>↳</span> contact/</a>
+                  </nav>
+                  <p class="terminal-command terminal-prompt"><span>alen@portfolio</span><b> ~ </b>$ <span class="terminal-cursor"></span></p>
+                </div>
+                <span class="terminal-reflection" aria-hidden="true"></span>
+              </div>
+              <span class="terminal-caption" aria-hidden="true">A NEW TAB, A NEW IDEA <i>✳</i></span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="about section-space" id="about">
+      <div class="mx-auto w-full max-w-7xl px-6">
+        <div class="section-kicker" data-reveal><span>01</span><p>ABOUT</p><i></i><p>THE PERSON BEHIND THE SCREEN</p></div>
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-y-8 about-row">
+          <div class="lg:col-span-5" data-reveal><h2>At the beginning<br>of a <em>big journey.</em></h2></div>
+          <div class="lg:col-span-6 lg:col-start-7 about-text" data-reveal>
+            <p class="lead-copy">I’m Alen Abraham, a first-year student at Presidency University in Bangalore.</p>
+            <p>I’m building my foundations in web development and C programming—learning how things work, trying ideas out, and getting a little better with every step.</p>
+            <p>This portfolio is a snapshot of where I am now. As I learn and make more, it’ll grow with me.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="skills section-space" id="skills">
+      <div class="mx-auto w-full max-w-7xl px-6">
+        <div class="section-kicker" data-reveal><span>02</span><p>TOOLBOX</p><i></i><p>SKILLS IN PROGRESS</p></div>
+        <div class="section-heading flex flex-col md:flex-row md:items-end md:justify-between gap-4" data-reveal><div><h2>What I’m <em>learning.</em></h2></div></div>
+        <div class="skills-stage" data-reveal>
+          <div class="carousel-track-line" aria-hidden="true"></div>
+          <div class="skills-orbit" id="skillsOrbit" aria-label="Rotating skill selector">
+            <button class="skill-node node-html" type="button" aria-label="HTML: semantic structure and accessible content"><span class="skill-face"><span class="skill-count">01 / MARKUP</span><span class="skill-glyph">&lt;/&gt;</span><b>HTML</b></span></button>
+            <button class="skill-node node-css" type="button" aria-label="CSS: responsive layouts and visual design"><span class="skill-face"><span class="skill-count">02 / STYLING</span><span class="skill-glyph">✳</span><b>CSS</b></span></button>
+            <button class="skill-node node-js" type="button" aria-label="JavaScript: language fundamentals and interactive pages"><span class="skill-face"><span class="skill-count">03 / INTERACTION</span><span class="skill-glyph">{ }</span><b>JavaScript</b></span></button>
+            <button class="skill-node node-c" type="button" aria-label="C programming: programming fundamentals and problem solving"><span class="skill-face"><span class="skill-count">04 / PROGRAMMING</span><span class="skill-glyph">C</span><b>C programming</b></span></button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="work section-space" id="work">
+      <div class="mx-auto w-full max-w-7xl px-6">
+        <div class="section-kicker" data-reveal><span>03</span><p>PROJECTS</p><i></i><p>THE WORK IN PROGRESS</p></div>
+        <div class="projects-heading" data-reveal>
+          <h2>Projects.<br><em>More soon.</em></h2>
+          <p>A space for experiments, ideas, and the things I build as I learn.</p>
+        </div>
+        <article class="project-feature project-redesign" data-reveal>
+          <div class="project-visual" aria-hidden="true">
+            <span class="visual-index">PORTFOLIO / 001</span>
+            <div class="visual-orbit orbit-a"></div><div class="visual-orbit orbit-b"></div>
+            <div class="visual-spark spark-a"></div><div class="visual-spark spark-b"></div>
+            <div class="visual-note"><small>THE NEXT THING</small><strong>Taking<br><em>shape.</em></strong><span class="note-line"></span><span class="note-caption">IDEA → BUILD → SHARE</span></div>
+          </div>
+          <div class="project-copy project-redesign-copy">
+            <span class="project-number"><i></i> CURRENTLY LEARNING</span>
+            <h3>My first project<br>is <em>still ahead.</em></h3>
+            <p>I don’t have a finished project to show yet. I’m building my foundations now, and this section will grow as I turn what I learn into things of my own.</p>
+            <div class="project-tags" aria-label="Skills I’m learning"><span>HTML</span><span>CSS</span><span>JavaScript</span><span>C</span></div>
+            <span class="project-footnote">NO PROJECTS PUBLISHED — YET</span>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="contact-section" id="contact">
+      <div class="mx-auto w-full max-w-7xl px-6 contact-inner" data-reveal>
+        <div class="section-kicker"><span>04</span><p>CONTACT</p></div>
+        <div class="contact-row">
+          <div><h2>Say <em>hello.</em></h2><p>Have a question or want to connect? Send me an email.</p></div>
+          <a class="contact-email" href="mailto:alenabraham2008@gmail.com">alenabraham2008@gmail.com <span aria-hidden="true">↗</span></a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer"><div class="mx-auto w-full max-w-7xl px-6"><a class="footer-brand" href="#home">AA<span>.</span></a><span>ALEN ABRAHAM · PRESIDENCY UNIVERSITY · BANGALORE</span><a href="#home">BACK TO TOP ↑</a></div></footer>
+  <script src="script.js"></script>
+</body>
+</html>
